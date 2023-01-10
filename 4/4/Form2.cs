@@ -20,6 +20,7 @@ namespace _4
 
         private void button1_Click(object sender, EventArgs e)
         {
+            int x;
             if (colorDialog1.ShowDialog() == DialogResult.OK)
             {
                 fmain.MyColor2 = button1.ForeColor = colorDialog1.Color;
