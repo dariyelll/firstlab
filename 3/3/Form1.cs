@@ -17,7 +17,7 @@ namespace L3
             InitializeComponent();
         }
         int n; //переменная для количества элементов массива
-
+        int x;
         private void button1_Click(object sender, EventArgs e)
         {
             // Выделение памяти под динамический массив.
@@ -79,6 +79,11 @@ namespace L3
         private void dataGridView1_EditingControlShowing_1(object sender, DataGridViewEditingControlShowingEventArgs e)
         {
             e.Control.KeyPress += new KeyPressEventHandler(myKeyPress);
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
         }
     }
